@@ -3,9 +3,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.history
+HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
+# HISTFILEに登録しないコマンド
+HISTORY_IGNORE="(ls|cd|pwd|exit|history|z|fzf)"
 
 bindkey -e
 # End of lines configured by zsh-newuser-install
